@@ -222,9 +222,9 @@ void TelegramBOT::analizeMessages(void)     {
               }
           rif[4]=0;
         }
-        if (a.substring(m-2,m)=="\"}")  {               //Search for "text" pointer end
+        if (a.substring(m,m+1)=="\"")  {               //Search for "text" pointer end
               if (rif[5]!=0)  {
-                message[i][5]=a.substring(rif[5],m-2);    //Write value into dedicated slot
+                message[i][5]=a.substring(rif[5],m);    //Write value into dedicated slot
             }
           rif[5]=0;
         }
