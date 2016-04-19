@@ -212,7 +212,7 @@ void TelegramBOT::analizeMessages(void)     {
         }
         if (a.substring(m-1,m)==",")  {                 //Search for "last name" pointer end
               if (rif[3]!=0)  {
-                message[i][3]=a.substring(rif[3],m-3);  //Write value into dedicated slot
+                message[i][3]=a.substring(rif[3],m-2);  //Write value into dedicated slot
               }
           rif[3]=0;
         }
